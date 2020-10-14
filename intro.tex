@@ -1,24 +1,67 @@
-\section{Motivators}
+\documentclass[a4paper,12pt]{report}
 
-What's wrong with the internet today? What's wrong with the web today?
+\usepackage{paralist}
 
-\section{On-boarding}
 
-Social media today are comparable to giant walled gardens.
-They mostly don't play well with each other and alternatives are isolated by being extremely difficult to carry personal data from one platform to the other.
+\begin{document}
 
-\subsection{Solution} 
 
-The way we envisioned to "tear down those walls" (that does not depend on the social media providers' willful cooperation) uses
+\chapter{Introduction}
+
+There are a few things which I believe are terribly wrong with the web today.
+Things I believe we can fix.
+Namely the pitfalls of
+\begin{inparaenum}[i)]
+  \item famous social media platforms,
+  \item media files metadata management, and
+  \item cryptocurrency-fiat exchange.
+\end{inparaenum}
+I will outline
+I will go over each one of them, explaining why they're problematic and outlining my vision of a possible solution, over the next few chapters.
+They are not related to each other, so you can read only the chapters that interest you.
+
+
+\chapter{Social Media}
+
+Social media platforms today are comparable to giant walled gardens, as is the case with most of the web 2.0.
+This threatens our sovereignty, for they hold our data hostage so we won't stop using their service.
+The solution: to take back control of our data.
+
+\section{Problem}
+
+The corporations behind the major social media platforms today make it really hard for you to carry your personal data with you\footnotemark.
+\footnotetext{Since GPDR, most have added an exporting feature, but with no way to interact with the data using the front-end you're accustomed. Also, you wouldn't be able to import that data to another platform anyway.}
+These platforms mostly don't play well with each other and alternatives to the most popular ones are often isolated, because it's extremely difficult to carry personal data from one platform to another.
+Unfortunately, this is by design, as it would be seemingly against the interest of these for-profit corporations to allow you to easily switch to their competition.
+I strongly believe however that tearing down those walls would not hurt their bottom line at all in the long term.
+On the contrary, the influx of new ideas would only serve in their favor.
+
+\section{Solution}
+
+The way we envisioned to ``tear down those walls'' (that does not depend on the social media providers' willful cooperation) uses
 \begin{itemize}
   \item automated web-scraping tools to download all user-accessible data to users' machines.
-  \item parsing scripts to structure the data in a self-verifiable (hashing), deterministic (content-addressing), convergent, and serializable fashion to ease data-sharing among users.
-  \item a BitTorrent-like (probably IPFS) data-sharing protocol that enables users to download content from each other, as well as searching for it.
+  \item parsing scripts to structure the data conveniently\footnotemark.
+  \footnotetext{Convenient as in self-verifiable (hashing), deterministic (content-addressing), convergent (non-conflicting, order-independent), and serializable fashion to ease data-sharing among users.}
+  \item a BitTorrent-like (probably something IPFS-enabled and scuttlebutt-inspired) data-sharing protocol that enables users to download content from each other, as well as searching for it.
   \item a front-end to allow users to interact with the (now owned by everyone) data.
 \end{itemize}
 
-\subsection{Planned side-effects}
+\section{Objectives}
 
-This plan is an attempt to empower users over their data and over the way they want to interact with it (e.g., using a front-end to access one's Instagram DMs or a different recommendation algorithm for one's TikTok For You page) and diminishing the walled-garden-granted "power" social media platforms might have over their users (e.g., hindering creators' reach because of their political opinions or making obscene changes to their apps' interfaces).
-It'll allow for much easier historical archiving efforts as content will be seldom lost\footnote{due to there being control mechanisms (probably some sort of DHT) tracking what data each host/node has.
-Nowadays, there could even be many copies of a file out there, but no way for anyone to find it and download it.}.
+This plan's goal is two-fold:
+Firstly, to attempt to empower users over their data and over the way they want to interact with it (e.g., using a custom front-end to access one's Instagram DMs or a different recommendation algorithm for one's TikTok For You page).
+And secondly, to diminish the walled-garden-granted ``power'' social media platforms currently have over their users (e.g., hindering creators' reach because of their political opinions or making obscene changes to their apps' interfaces).
+It'll also allow for much easier historical archiving efforts as content will be seldom lost\footnotemark.
+\footnotetext{Because there will be control mechanisms (probably some sort of DHT) tracking what data each host/node has. Nowadays, there could even be many copies of a file out there, but no way for anyone to find it and download it.}
+
+
+\chapter{Metadata}
+
+There is no standard way of attributing metadata to media files.
+
+
+\chapter{Cryptocurrency ATMs}
+
+
+\end{document}
